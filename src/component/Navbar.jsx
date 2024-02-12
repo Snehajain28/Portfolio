@@ -1,9 +1,10 @@
 import { useState } from 'react'
-import {  FaProjectDiagram } from "react-icons/fa";
-import { MdClose, MdContactPhone,  MdStackedBarChart } from "react-icons/md";
-import {  HiMenuAlt2 } from "react-icons/hi";
+import { FaProjectDiagram } from "react-icons/fa";
+import { MdClose, MdContactPhone, MdStackedBarChart } from "react-icons/md";
+import { HiMenuAlt2 } from "react-icons/hi";
 import { BiHome, BiUserCircle } from 'react-icons/bi';
 import { HashLink } from 'react-router-hash-link';
+import logo from '../assests/logo.png'
 
 
 export default function Navbar() {
@@ -16,21 +17,21 @@ export default function Navbar() {
       className="w-full h-[60px] bg-white md:h-[70px] fixed top-0 z-50 ">
       <nav className="flex items-center justify-between  h-full ">
         <div onClick={() => {
-                  window.scroll({
-                    top: 0,
-                    behavior: "smooth",
-                  })
-                }}>
+          window.scroll({
+            top: 0,
+            behavior: "smooth",
+          })
+        }}>
           <img className=" h-[3rem] md:h-[4rem] md:ml-[2rem] rounded-full  ml-[1rem] object-fit object-contain "
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrkZUF4rNiNLIrukPWm8OgvvrNzEneJFsf0g&usqp=CAU" alt='' />
+            src={logo} alt='' />
         </div>
         <div className=''>
           {showMenu && (
             <ul
               className=" hidden md:flex items-center  w-auto z-50 p-0  gap-2" >
-              <HashLink  smooth to={'#home'}
+              <HashLink smooth to={'#home'}
                 className=" font-semibold hover:font-bold  px-5 lg:px-10  text-[#767676] hover:underline underline-offset-[5px]  hover:text-[#262626] md:border-r-[2px] border-r-gray-300"
-                >
+              >
                 <li>{"Home"}</li>
               </HashLink>
               <HashLink to={'#about'} smooth
@@ -38,12 +39,12 @@ export default function Navbar() {
               >
                 <li>{"About"}</li>
               </HashLink>
-              <HashLink  smooth
+              <HashLink smooth
                 className="font-semibold hover:font-bold  px-5 lg:px-10 text-[#767676] hover:underline hover:text-[#262626] underline-offset-[5px]  md:border-r-[2px] border-r-gray-300 "
                 to={'#tech'} >
                 <li>{"Tech Stack"}</li>
               </HashLink>
-              <HashLink  smooth
+              <HashLink smooth
                 className=" font-semibold hover:font-bold  px-5 lg:px-10  text-[#767676] hover:underline hover:text-[#262626] underline-offset-[5px]  md:border-r-[2px] border-r-gray-300"
                 to={'#projects'} >
                 <li>{"Projects"}</li>
@@ -74,27 +75,27 @@ export default function Navbar() {
               <div
                 className="  px-7 py-5relative" >
                 <ul className=" flex flex-col gap-5 py-[2rem]">
-                <HashLink className='flex border-b-[1px] items-center gap-2'
-                    to={'#home'}  smooth
+                  <HashLink className='flex border-b-[1px] items-center gap-2'
+                    to={'#home'} smooth
                     onClick={() => setSidenav(false)}
                   >
                     <BiHome />{"Home"}
                   </HashLink>
                   <HashLink className='flex border-b-[1px] items-center gap-2'
-                    to={'#about'}  smooth
+                    to={'#about'} smooth
                     onClick={() => setSidenav(false)}
                   >
                     <BiUserCircle />{"About"}
                   </HashLink>
                   <HashLink className='flex border-b-[1px] items-center gap-2'
-                    to={'#tech'}  smooth
+                    to={'#tech'} smooth
                     onClick={() => setSidenav(false)}
                   >
                     <MdStackedBarChart />{"Tech Stack"}
                   </HashLink>
 
                   <HashLink className='flex border-b-[1px] items-center gap-2'
-                    to={'#projects'}  smooth
+                    to={'#projects'} smooth
                     onClick={() => setSidenav(false)}
                   >
                     <FaProjectDiagram />{"Projects"}
