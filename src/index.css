@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#home {
+  background-repeat: repeat;
+  background-size: cover;
+  object-fit:fill;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW7C87DK9ViatT_gV2IgvY5SqRClOsqTfN-A&usqp=CAU");
+}
+
+#tech {
+  background-repeat: repeat;
+  background-size: cover;
+  object-fit:fill;
+  background-image: url("https://www.ishir.com/wp-content/uploads/2021/06/Custom-dimensions-670x450-px-Custom-dimensions.jpeg");
+}
