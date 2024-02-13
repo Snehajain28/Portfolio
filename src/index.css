@@ -18,6 +18,7 @@ code {
 
 #home {
   background-repeat: repeat;
+  background-attachment: fixed;
   background-size: cover;
   object-fit:fill;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW7C87DK9ViatT_gV2IgvY5SqRClOsqTfN-A&usqp=CAU");

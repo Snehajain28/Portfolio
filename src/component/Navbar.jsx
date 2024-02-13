@@ -29,29 +29,29 @@ export default function Navbar() {
           {showMenu && (
             <ul
               className=" hidden md:flex items-center  w-auto z-50 p-0  gap-2" >
-              <HashLink smooth to={'#home'}
+              <HashLink smooth to={'/#home'}
                 className=" font-semibold hover:font-bold  px-5 lg:px-10  text-[#767676] hover:underline underline-offset-[5px]  hover:text-[#262626] md:border-r-[2px] border-r-gray-300"
               >
                 <li>{"Home"}</li>
               </HashLink>
-              <HashLink to={'#about'} smooth
+              <HashLink to={'/#about'} smooth
                 className=" font-semibold hover:font-bold  px-5  lg:px-10 text-[#767676] hover:underline hover:text-[#262626] underline-offset-[5px]  md:border-r-[2px] border-r-gray-300 "
               >
                 <li>{"About"}</li>
               </HashLink>
               <HashLink smooth
                 className="font-semibold hover:font-bold  px-5 lg:px-10 text-[#767676] hover:underline hover:text-[#262626] underline-offset-[5px]  md:border-r-[2px] border-r-gray-300 "
-                to={'#tech'} >
+                to={'/#tech'} >
                 <li>{"Tech Stack"}</li>
               </HashLink>
               <HashLink smooth
                 className=" font-semibold hover:font-bold  px-5 lg:px-10  text-[#767676] hover:underline hover:text-[#262626] underline-offset-[5px]  md:border-r-[2px] border-r-gray-300"
-                to={'#projects'} >
+                to={'/#projects'} >
                 <li>{"Projects"}</li>
               </HashLink>
               <HashLink smooth
                 className="font-semibold lg:px-10 px-5 hover:font-bold text-[#767676] hover:underline hover:text-[#262626] md:border-r-[2px] underline-offset-[5px]  border-r-gray-300 "
-                to={'#contact'} >
+                to={'/#contact'} >
                 <li>{"Contact"}</li>
               </HashLink>
             </ul>
