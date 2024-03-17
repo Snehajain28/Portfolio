@@ -15,18 +15,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+.logo{
+ transition-timing-function: ease-in;
+}
+.logo:hover {
+  transform: scale(1.2);
+}
 #home {
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: cover;
-  object-fit:fill;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW7C87DK9ViatT_gV2IgvY5SqRClOsqTfN-A&usqp=CAU");
-}
-
-#tech {
-  background-repeat: repeat;
-  background-size: cover;
-  object-fit:fill;
-  background-image: url("https://www.ishir.com/wp-content/uploads/2021/06/Custom-dimensions-670x450-px-Custom-dimensions.jpeg");
+  object-fit:cover;
+  background-image: url("https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg?t=st=1710662846~exp=1710666446~hmac=6bbafbe41f6f07e6d42f4e999b29e0d3b92d46efbbdef53b9add4d8e785d2e24&w=740");
 }

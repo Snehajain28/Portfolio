@@ -13,9 +13,8 @@ export default function Navbar() {
   const [sidenav, setSidenav] = useState(false);
 
   return (
-    <div
-      className="w-full h-[60px] bg-white md:h-[70px] fixed top-0 z-50 ">
-      <nav className="flex items-center justify-between  h-full ">
+    <div   className="w-full h-[60px] bg-white md:h-[70px] fixed top-0 z-50 ">
+      <nav  className="flex items-center justify-between  h-full ">
         <div onClick={() => {
           window.scroll({
             top: 0,
@@ -24,6 +23,7 @@ export default function Navbar() {
         }}>
           <img className=" h-[3rem] md:h-[4rem] md:ml-[2rem] rounded-full  ml-[1rem] object-fit object-contain "
             src={logo} alt='' />
+
         </div>
         <div className=''>
           {showMenu && (

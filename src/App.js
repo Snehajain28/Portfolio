@@ -16,7 +16,7 @@ function App() {
 
 
   return (
-    <div className='overflow-x-hidden text-white bg-black'>
+    <div className='overflow-x-hidden '>
       <Routes>
         <Route path='/' element={<Main />} />
         <Route path='/delicious-eats' element={<FoodFun />} />
