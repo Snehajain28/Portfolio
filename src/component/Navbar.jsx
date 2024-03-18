@@ -7,9 +7,10 @@ import { HashLink } from 'react-router-hash-link';
 import logo from '../assests/logo.png'
 
 
+
 export default function Navbar() {
 
-  const showMenu = true;
+  const showMenu = true
   const [sidenav, setSidenav] = useState(false);
 
   return (
@@ -76,33 +77,33 @@ export default function Navbar() {
                 className="  px-7 py-5relative" >
                 <ul className=" flex flex-col gap-5 py-[2rem]">
                   <HashLink className='flex border-b-[1px] items-center gap-2'
-                    to={'#home'} smooth
+                    to={'/#home'} smooth
                     onClick={() => setSidenav(false)}
                   >
                     <BiHome />{"Home"}
                   </HashLink>
                   <HashLink className='flex border-b-[1px] items-center gap-2'
-                    to={'#about'} smooth
+                    to={'/#about'} smooth
                     onClick={() => setSidenav(false)}
                   >
                     <BiUserCircle />{"About"}
                   </HashLink>
                   <HashLink className='flex border-b-[1px] items-center gap-2'
-                    to={'#tech'} smooth
+                    to={'/#tech'} smooth
                     onClick={() => setSidenav(false)}
                   >
                     <MdStackedBarChart />{"Tech Stack"}
                   </HashLink>
 
                   <HashLink className='flex border-b-[1px] items-center gap-2'
-                    to={'#projects'} smooth
+                    to={'/#projects'} smooth
                     onClick={() => setSidenav(false)}
                   >
                     <FaProjectDiagram />{"Projects"}
                   </HashLink>
 
                   <HashLink className='flex  items-center gap-2'
-                    to={'#contact'} smooth
+                    to={'/#contact'} smooth
                     onClick={() => setSidenav(false)}
                   >
                     <MdContactPhone /> {"Contact"}

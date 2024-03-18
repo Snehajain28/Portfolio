@@ -15,6 +15,8 @@ function Main() {
       <HashLink to={'#home'} elementId='home' />
       <HashLink to={'#about'} elementId='about' />
       <HashLink to={'#tech'} elementId='tech' />
+      <HashLink to={'#tech'} elementId='tech' />
+
       <HashLink to={'#projects'} elementId='projects' />
       <HashLink to={'#contact'} elementId='contact' />
       <Home />

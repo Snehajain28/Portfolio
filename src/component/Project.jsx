@@ -14,7 +14,7 @@ export default function Project() {
           PROJECTS
         </h2>
         <div className='flex flex-wrap mx-auto gap-2 lg:gap-6  w-[80vw] justify-center'>
-          <Link to={'/food-fun'} data-aos="zoom-in"
+          <Link to={'/delicious-eats'} data-aos="zoom-in"
             data-aos-duration="2000"
             className='w-11/12 md:w-[25rem] border-[2px] md:h-[20rem] p-3 rounded-lg flex flex-col '>
             <img
@@ -36,7 +36,7 @@ export default function Project() {
             <p className="text-2xl mt-3  font-semibold dark:text-primary-light " >Melody Mates</p>
           </Link>
 
-          <Link to={'/gocart'} data-aos="zoom-in"
+          <Link to={'/go-cart'} data-aos="zoom-in"
             data-aos-duration="2000"
             className='w-11/12 md:w-[25rem] border-[2px] md:h-[20rem] p-3 rounded-lg flex flex-col'>
             <img

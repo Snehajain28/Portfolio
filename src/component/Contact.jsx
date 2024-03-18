@@ -55,10 +55,10 @@ const Contact = () => {
 		<div id='contact' className="w-full ">
 			<div className='h-[70px]'></div>
 			<div className="w-10/12 mx-auto flex flex-col justify-center items-center">
-				<h2 className="text-4xl text-gray-100 font-bold  dark:text-primary-light mt-12 mb-8">
+				<h2 className="text-4xl  font-bold  dark:text-primary-light mt-12 mb-8">
 					CONTACT ME
 				</h2>
-				<p className='lg:w-6/12 text-center italic'>Feel free to Contact me by submitting the form below or connect on social media and I will get back to you as soon as possible</p>
+				<p className='lg:w-6/12 text-center '>Feel free to Contact me by submitting the form below or connect on social media and I will get back to you as soon as possible</p>
 				<ul className="space-y-5  my-10">
 					{contacts.map((contact) => (
 						<li className="flex gap-4" key={contact.id}>
