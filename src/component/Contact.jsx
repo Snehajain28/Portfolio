@@ -2,6 +2,7 @@ import { FiPhone, FiMapPin, FiMail } from 'react-icons/fi';
 import TextField from '@mui/material/TextField';
 import { useState } from "react";
 import axios from "axios";
+import { useStateValues } from '../utils/Provider';
 
 
 const contacts = [
@@ -25,12 +26,16 @@ const contacts = [
 
 
 const Contact = () => {
+	const [{ hamburger, abc }, dispatch] = useStateValues();
 
+	if (abc) { console.log(hamburger) }
+	
 	const [formData, setformData] = useState({
 		name: "",
 		email: "",
 		msg: "",
 	});
+	
 
 	const changeHandler = (e) => {
 		setformData({
@@ -52,7 +57,13 @@ const Contact = () => {
 		}
 	}
 	return (
-		<div id='contact' className="w-full ">
+		<div onClick={() => {
+			dispatch({
+			  type: "SET_HAMBURGER",
+			  hamburger: false,
+			})
+		  }}
+		id='contact' className="w-full h-full ">
 			<div className='h-[70px]'></div>
 			<div className="w-10/12 mx-auto flex flex-col justify-center items-center">
 				<h2 className="text-4xl  font-bold  dark:text-primary-light mt-12 mb-8">
@@ -74,8 +85,6 @@ const Contact = () => {
 				<div className="">
 					<div className="mx-auto ">
 						<form
-						 data-aos="fade-zoom-in"
-						 data-aos-duration="1000"
 							onSubmit={handleSubmit}
 							className="border-[2px] md:w-[30rem] rounded-lg p-4 mx-auto dark:bg-secondary-dark rounded-xl shadow-xl "
 						>

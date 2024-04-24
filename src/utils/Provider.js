@@ -4,6 +4,7 @@ const PortContext = createContext();
 
 const initialState = {
     hamburger: false,
+    mode:"light",
 }
 
 const reducers = (state, action) => {
@@ -11,6 +12,10 @@ const reducers = (state, action) => {
         case "SET_HAMBURGER": return {
             ...state,
             hamburger: action.hamburger
+        }
+        case "SET_MODE": return {
+            ...state,
+            mode: action.mode
         }
         default:
             return state;

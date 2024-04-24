@@ -21,6 +21,13 @@ code {
 .logo:hover {
   transform: scale(1.2);
 }
+.scaling{
+  transition-timing-function: ease-in;
+  transition-duration: 500ms;
+ }
+ .scaling:hover {
+   transform: scale(5px);
+ }
 #home {
   background-repeat: repeat;
   background-attachment: fixed;
@@ -28,3 +35,4 @@ code {
   object-fit:cover;
   background-image: url("https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg?t=st=1710662846~exp=1710666446~hmac=6bbafbe41f6f07e6d42f4e999b29e0d3b92d46efbbdef53b9add4d8e785d2e24&w=740");
 }
+

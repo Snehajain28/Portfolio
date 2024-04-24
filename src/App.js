@@ -1,30 +1,55 @@
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import FoodFun from './Pages/FoodFun';
 import Main from './Pages/Main';
-import MelodyMates from "./Pages/MelodyMates";
-import GoCart from "./Pages/GoCart";
+import Navbar from "./component/Navbar";
+import Projectpage from "./Pages/Projectpage";
+import gocart from './assests/goCart.png'
+import chitchat from './assests/chitchat.png'
+import melodymates from './assests/Melodymates.png'
 
+
+
+const data = {
+  chitchat: {
+    src:chitchat,
+    name:"Chit Chat",
+    technologies:['react','mern','full stack','tailwind','web dev'],
+    github:'https://github.com/Snehajain28/MelodyMate',
+    link:'https://dapper-capybara-8b5422.netlify.app/#',
+    descrption:'Welcome to Melody Mates, your music paradise driven by the Spotify API. Immerse in a world of tunes, connect with fellow music enthusiasts, and embark on a melodious journey. Welcome to Melody Mates!',
+ 
+  },
+  melodymates: {
+    src:melodymates,
+    name:"Melody Mates",
+    technologies:['react','mern','full stack','tailwind','web dev'],
+    github:'https://github.com/Snehajain28/MelodyMate',
+    link:'https://dapper-capybara-8b5422.netlify.app/#',
+    descrption:'Welcome to Melody Mates, your music paradise driven by the Spotify API. Immerse in a world of tunes, connect with fellow music enthusiasts, and embark on a melodious journey. Welcome to Melody Mates!',
+  },
+  gocart:{
+    src:gocart,
+    name:"Go Cart",
+    technologies:['react','mern','full stack','tailwind','web dev'],
+    github:'https://github.com/Snehajain28/E-commerce-frontend',
+    link:'https://timely-croissant-687f9b.netlify.app/',
+    descrption:' Welcome to Go Cart, the ultimate online shopping destination equipped with a dynamic backend and user-friendly administrative interface. Discover, shop, and effortlessly oversee your store. Experience the future of e-commerce with Go Cart!',
+
+  }
+}
 
 function App() {
 
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
-
   return (
     <div className='overflow-x-hidden '>
+      <Navbar />
       <Routes>
         <Route path='/' element={<Main />} />
-        <Route path='/delicious-eats' element={<FoodFun />} />
-        <Route path='/melody-mates' element={<MelodyMates />} />
-        <Route path='/go-cart' element={<GoCart />} />
-     
+        <Route path='/chit-chat' element={<Projectpage data={data.chitchat} />} />
+        <Route path='/melody-mates' element={<Projectpage data={data.melodymates} />} />
+        <Route path='/go-cart' element={<Projectpage data={data.gocart} />} />
+
       </Routes>
-    </div>
+    </div >
   );
 }
 

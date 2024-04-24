@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../component/Navbar';
 import Home from '../component/Home';
 import { HashLink } from 'react-router-hash-link';
 import About from '../component/About';
@@ -10,13 +9,11 @@ import Project from '../component/Project';
 
 function Main() {
   return (
-    <div>
-        <Navbar />
+    <div className='overflow-y-scroll h-screen'>
       <HashLink to={'#home'} elementId='home' />
       <HashLink to={'#about'} elementId='about' />
       <HashLink to={'#tech'} elementId='tech' />
       <HashLink to={'#tech'} elementId='tech' />
-
       <HashLink to={'#projects'} elementId='projects' />
       <HashLink to={'#contact'} elementId='contact' />
       <Home />
