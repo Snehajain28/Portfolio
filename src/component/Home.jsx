@@ -26,7 +26,7 @@ const [{ hamburger, abc }, dispatch] = useStateValues();
         hamburger: false,
       })
     }}
-    id="home" className="relative dark:text-black h-[90vh] overflow-x-hidden h-content cursor-pointer items-center flex-col flex w-[100vw]">
+    id="home" className="dark:text-black  h-content cursor-pointer items-center flex-col flex w-full">
       <div className="flex flex-col md:w-[90vw] mx-auto md:gap-[5rem] lg:gap-0 lg:flex-row-reverse  items-center xs:gap-8 gap-5">
         <div className="h-[7rem] xs:h-[9rem] xs:mt-[2rem] mt-3 md:mt-[4rem] md:h-[15rem] lg:h-[20rem] lg:mt-[2rem] ">
           <img data-aos='fade-up' data-aos-duration="1000"
@@ -34,7 +34,7 @@ const [{ hamburger, abc }, dispatch] = useStateValues();
             src="https://img.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_138676-9487.jpg?size=338&ext=jpg&ga=GA1.1.87170709.1707436800&semt=ais" />
         </div>
 
-        <div className="flex flex-col w-[90vw] mx-auto h-full lg:gap-6 gap-4 justify-center items-center ">
+        <div className="flex flex-col w-[90vw] lg:w-[70vw] mx-auto h-full lg:gap-6 gap-4 justify-center items-center ">
           <h1 data-aos='fade-up' data-aos-duration="1000" className=" md:text-[3rem]  lg:mt-[6rem] text-3xl justify-center flex items-center gap-2 font-extrabold">
             <FaRegHandPeace className="animate-bounce" /> Hello, I'm Sneha Jain</h1>
           <p data-aos='fade-up' data-aos-duration="1000"

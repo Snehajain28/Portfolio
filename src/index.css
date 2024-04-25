@@ -9,6 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -23,10 +24,11 @@ code {
 }
 .scaling{
   transition-timing-function: ease-in;
-  transition-duration: 500ms;
+  transition-duration: 150ms;
  }
  .scaling:hover {
-   transform: scale(5px);
+   transform: scale(1.1);
+ 
  }
 #home {
   background-repeat: repeat;

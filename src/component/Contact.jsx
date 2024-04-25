@@ -50,9 +50,9 @@ const Contact = () => {
 				hamburger: false,
 			})
 		}}
-			id='contact' className="w-full h-full ">
+			id='contact' className="w-full h-content mx-auto  ">
 			<div className="w-10/12 mx-auto flex flex-col justify-center items-center">
-				<h2 className="text-4xl  font-bold  dark:text-primary-light mt-12 mb-6">
+				<h2 className='text-4xl font-bold w-[15rem] my-10 flex justify-center mx-auto border-b-4 border-gray-400'>
 					CONTACT ME
 				</h2>
 				<p className='lg:w-6/12 w-[90vw] text-justify '>Feel free to Contact me by submitting the form below or connect on social media and I will get back to you as soon as possible</p>
@@ -83,6 +83,7 @@ const Contact = () => {
 									name="name"
 									value={formData.name}
 									onChange={changeHandler}
+									className='w-full'
 								/>
 							</div>
 							<div className="mb-4 rounded-lg md:w-[15rem] md:mx-auto  bg-white">
@@ -94,6 +95,7 @@ const Contact = () => {
 									name="email"
 									value={formData.email}
 									onChange={changeHandler}
+									className='w-full'
 								/>
 							</div>
 							<div className="mb-4 rounded-lg md:w-[15rem] md:mx-auto md:my-10  bg-white  ">
@@ -105,6 +107,7 @@ const Contact = () => {
 									name="msg"
 									value={formData.msg}
 									onChange={changeHandler}
+									className='w-full'
 								/>
 							</div>
 

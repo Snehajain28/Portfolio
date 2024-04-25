@@ -55,15 +55,15 @@ export default function Navbar() {
 
 
   return (
-    <div className="w-full h-[60px] bg-white  dark:bg-[#0f0f0f] shadow-lg md:h-[70px] sticky top-0 z-50 ">
-      <nav className="flex h-full items-center justify-between  ">
+    <div className="w-full h-[60px] bg-white  dark:bg-[#212121] dark:shadow-blue-900 dark:shadow-sm shadow-lg md:h-[70px] sticky top-0 z-50 ">
+      <nav className="flex h-full w-[90vw] mx-auto items-center justify-between  ">
         <Link to={'/#home'}> <img
           className=" h-[3rem] md:h-[4rem] md:ml-[2rem] rounded-full  ml-[1rem] object-fit object-contain "
           src={logo} alt='' />
         </Link>
         <div className=''>
           <ul
-            className=" hidden md:flex items-center  w-auto z-50 p-0  gap-2" >
+            className=" hidden md:flex items-center  gap-2" >
             <HashLink smooth to={'/#home'}
               className=" font-semibold hover:font-bold dark:text-gray-200  px-5 lg:px-10  text-[#767676] hover:underline underline-offset-[5px] dark:hover:text-white   hover:text-[#262626] md:border-r-[2px] border-r-gray-300"
             >
@@ -89,7 +89,7 @@ export default function Navbar() {
               to={'/#contact'} >
               <li>{"Contact"}</li>
             </HashLink>
-            <button type="button" onClick={themeHandler} className="text-lg font-semibold dark:bg-gray-50 dark:text-gray-900 bg-white border rounded-full px-2 py-1 hover:shadow-lg">{theme === "light" ? '💡 Light' : '🌙 Dark'}</button>
+            <button type="button" onClick={themeHandler} className="text-lg font-semibold dark:bg-gray-50 dark:text-gray-900 bg-white border rounded-full px-2 py-1 hover:shadow-lg">{theme === "dark" ? '💡 Light' : '🌙 Dark'}</button>
 
           </ul>
 
@@ -122,7 +122,7 @@ export default function Navbar() {
               <div
                 className="  px-8  relative" >
                 <ul className=" flex flex-col gap-4 py-[1.5rem]">
-                  <button type="button" onClick={themeHandler} className="text-lg font-semibold dark:bg-gray-50 dark:text-gray-900 bg-white border rounded-full px-2 py-1 hover:shadow-lg">{theme === "light" ? '💡 Light' : '🌙 Dark'}</button>
+                  <button type="button" onClick={themeHandler} className="text-lg font-semibold dark:bg-gray-50 dark:text-gray-900 bg-white border rounded-full px-2 py-1 hover:shadow-lg">{theme === "dark" ? '💡 Light' : '🌙 Dark'}</button>
                   <HashLink className='flex border-b-[1px] border-black items-center gap-2'
                     to={'/#home'} smooth
                     onClick={() => {
