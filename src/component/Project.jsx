@@ -31,7 +31,7 @@ const Card = () => {
     {
       Tech.map((d,i) => {
         return (<Link to={d.link} key={i}
-          className='w-11/12 md:w-[25rem] border-[2px] md:h-[20rem] p-3 rounded-lg flex flex-col '>
+         data-aos="slide-up" className='w-11/12 md:w-[25rem] border-[2px] md:h-[20rem] p-3 rounded-lg flex flex-col '>
          <div className=''>
          <img 
             className='scaling w-full h-full  object-fit object-cover rounded-lg '
@@ -54,10 +54,10 @@ export default function Project() {
     AOS.init({duration: 1000})
 })
   return (
-    <div id='projects' className='w-[100vw] mt-[2rem]'>
+    <div id='projects' className='w-[100vw]  mt-[2rem]'>
 
       <h2
-      className="text-4xl h-[4rem]mb-8 font-bold text-center dark:text-primary-light">
+      className="text-4xl h-[4rem] mb-8 font-bold text-center dark:text-primary-light">
         PROJECTS
       </h2>
       <div className=''>

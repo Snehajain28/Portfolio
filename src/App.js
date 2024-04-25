@@ -1,11 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
 import Main from './Pages/Main';
-import Navbar from "./component/Navbar";
 import Projectpage from "./Pages/Projectpage";
 import gocart from './assests/goCart.png'
 import chitchat from './assests/chitchat.png'
 import melodymates from './assests/Melodymates.png'
-
+import Navbar from "./component/Navbar";
 
 
 const data = {
@@ -40,14 +39,13 @@ const data = {
 function App() {
 
   return (
-    <div className='overflow-x-hidden '>
-      <Navbar />
+    <div className='w-screen h-screen'>
+         <Navbar/>
       <Routes>
         <Route path='/' element={<Main />} />
         <Route path='/chit-chat' element={<Projectpage data={data.chitchat} />} />
         <Route path='/melody-mates' element={<Projectpage data={data.melodymates} />} />
         <Route path='/go-cart' element={<Projectpage data={data.gocart} />} />
-
       </Routes>
     </div >
   );

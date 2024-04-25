@@ -55,8 +55,8 @@ export default function Navbar() {
 
 
   return (
-    <div className="w-full h-[60px] dark:bg-[#0f0f0f] shadow-lg md:h-[70px] stcky top-0 z-50 ">
-      <nav className="flex items-center justify-between  h-full ">
+    <div className="w-full h-[60px] bg-white  dark:bg-[#0f0f0f] shadow-lg md:h-[70px] sticky top-0 z-50 ">
+      <nav className="flex h-full items-center justify-between  ">
         <Link to={'/#home'}> <img
           className=" h-[3rem] md:h-[4rem] md:ml-[2rem] rounded-full  ml-[1rem] object-fit object-contain "
           src={logo} alt='' />
@@ -65,27 +65,27 @@ export default function Navbar() {
           <ul
             className=" hidden md:flex items-center  w-auto z-50 p-0  gap-2" >
             <HashLink smooth to={'/#home'}
-              className=" font-semibold hover:font-bold  px-5 lg:px-10  text-[#767676] hover:underline underline-offset-[5px]  hover:text-[#262626] md:border-r-[2px] border-r-gray-300"
+              className=" font-semibold hover:font-bold dark:text-gray-200  px-5 lg:px-10  text-[#767676] hover:underline underline-offset-[5px] dark:hover:text-white   hover:text-[#262626] md:border-r-[2px] border-r-gray-300"
             >
               <li>{"Home"}</li>
             </HashLink>
             <HashLink to={'/#about'} smooth
-              className=" font-semibold hover:font-bold  px-5  lg:px-10 text-[#767676] hover:underline hover:text-[#262626] underline-offset-[5px]  md:border-r-[2px] border-r-gray-300 "
+              className=" font-semibold hover:font-bold  px-5 dark:text-gray-200  lg:px-10 text-[#767676] hover:underline hover:text-[#262626] dark:hover:text-white    underline-offset-[5px]  md:border-r-[2px] border-r-gray-300 "
             >
               <li>{"About"}</li>
             </HashLink>
             <HashLink smooth
-              className="font-semibold hover:font-bold  px-5 lg:px-10 text-[#767676] hover:underline hover:text-[#262626] underline-offset-[5px]  md:border-r-[2px] border-r-gray-300 "
+              className="font-semibold hover:font-bold  px-5 dark:text-gray-200 lg:px-10 text-[#767676] hover:underline hover:text-[#262626] dark:hover:text-white    underline-offset-[5px]  md:border-r-[2px] border-r-gray-300 "
               to={'/#tech'} >
               <li>{"Tech Stack"}</li>
             </HashLink>
             <HashLink smooth
-              className=" font-semibold hover:font-bold  px-5 lg:px-10  text-[#767676] hover:underline hover:text-[#262626] underline-offset-[5px]  md:border-r-[2px] border-r-gray-300"
+              className=" font-semibold hover:font-bold  px-5 lg:px-10 dark:text-gray-200 text-[#767676] hover:underline hover:text-[#262626] dark:hover:text-white    underline-offset-[5px]  md:border-r-[2px] border-r-gray-300"
               to={'/#projects'} >
               <li>{"Projects"}</li>
             </HashLink>
             <HashLink smooth
-              className="font-semibold lg:px-10 px-5 hover:font-bold text-[#767676] hover:underline hover:text-[#262626] md:border-r-[2px] underline-offset-[5px]  border-r-gray-300 "
+              className="font-semibold lg:px-10 px-5 hover:font-bold dark:text-gray-200 text-[#767676] hover:underline hover:text-[#262626] dark:hover:text-white    md:border-r-[2px] underline-offset-[5px]  border-r-gray-300 "
               to={'/#contact'} >
               <li>{"Contact"}</li>
             </HashLink>
@@ -102,7 +102,7 @@ export default function Navbar() {
                     hamburger: true,
                   })
                 }}
-                className=" sm:hidden text-black cursor-pointer absolute top-4 right-[3rem]"
+                className=" sm:hidden dark:text-white cursor-pointer absolute top-4 right-[3rem]"
               />) :
               (
                 <MdClose size={30}
@@ -112,7 +112,7 @@ export default function Navbar() {
                       hamburger: false,
                     })
                   }}
-                  className="sm:hidden text-black cursor-pointer absolute top-4 right-[3rem]"
+                  className="sm:hidden  dark:text-white cursor-pointer absolute top-4 right-[3rem]"
                 />
               )
           }

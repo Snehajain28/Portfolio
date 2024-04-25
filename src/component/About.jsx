@@ -2,10 +2,10 @@ import { HashLink } from "react-router-hash-link";
 
 function About() {
   return (
-    <div id="about" className=" mt-[2rem] text-center h-content  flex justify-center items-center flex-col w-[90vw] mx-auto  " >
-      <h1 className="text-3xl  md:text-5xl font-bold flex justify-center">ABOUT ME</h1>
+    <div id="about" className=" dark:bg-black mt-[2rem] text-center h-content  flex justify-center items-center flex-col w-[100vw] mx-auto  " >
+      <h1 className="text-3xl   md:text-5xl font-bold flex justify-center">ABOUT ME</h1>
       <p className="w-[80vw] mx-auto my-[1rem] font-semibold text-center text-xl md:text-2xl mx-auto">Hi, I’m Sneha Jain. Nice to meet you.</p>
-      <p className=" lg:w-[50vw] flex justify-center line-height-[1px] mx-auto mt-3   md:w-10/12 text-[1rem]  text-justify "> Here, you'll find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
+      <p className=" lg:w-[50vw] w-[80vw]  flex justify-center line-height-[1px] mx-auto mt-3  md:w-10/12 text-[1rem] text-justify "> Here, you'll find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
       <div className="flex items-center justify-between w-11/12 mx-auto">
       </div>
       <div className="flex flex-col  lg:w-10/12 items-center mx-auto lg:flex-row">

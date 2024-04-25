@@ -1,9 +1,7 @@
 import { FiPhone, FiMapPin, FiMail } from 'react-icons/fi';
 import TextField from '@mui/material/TextField';
 import { useState } from "react";
-import axios from "axios";
 import { useStateValues } from '../utils/Provider';
-
 
 const contacts = [
 	{
@@ -17,7 +15,7 @@ const contacts = [
 		icon: <FiMail />,
 	},
 	{
-		id: 3,  
+		id: 3,
 		name: '6260882351',
 		icon: <FiPhone />,
 	},
@@ -29,13 +27,13 @@ const Contact = () => {
 	const [{ hamburger, abc }, dispatch] = useStateValues();
 
 	if (abc) { console.log(hamburger) }
-	
+
 	const [formData, setformData] = useState({
 		name: "",
 		email: "",
 		msg: "",
 	});
-	
+
 
 	const changeHandler = (e) => {
 		setformData({
@@ -44,39 +42,27 @@ const Contact = () => {
 		});
 	}
 
-	async function handleSubmit(e) {
-		e.preventDefault();
-		const data = new FormData()
-		data.append("name", formData.name)
-		data.append("email", formData.email)
-		data.append("msg", formData.msg)
 	
-		const res = await axios.post(`/api/v1/product/add-product`, data)
-		if (res.status === 200) {
-			setformData('');
-		}
-	}
 	return (
 		<div onClick={() => {
 			dispatch({
-			  type: "SET_HAMBURGER",
-			  hamburger: false,
+				type: "SET_HAMBURGER",
+				hamburger: false,
 			})
-		  }}
-		id='contact' className="w-full h-full ">
-			<div className='h-[70px]'></div>
+		}}
+			id='contact' className="w-full h-full ">
 			<div className="w-10/12 mx-auto flex flex-col justify-center items-center">
-				<h2 className="text-4xl  font-bold  dark:text-primary-light mt-12 mb-8">
+				<h2 className="text-4xl  font-bold  dark:text-primary-light mt-12 mb-6">
 					CONTACT ME
 				</h2>
-				<p className='lg:w-6/12 text-center '>Feel free to Contact me by submitting the form below or connect on social media and I will get back to you as soon as possible</p>
+				<p className='lg:w-6/12 w-[90vw] text-justify '>Feel free to Contact me by submitting the form below or connect on social media and I will get back to you as soon as possible</p>
 				<ul className="space-y-5  my-10">
 					{contacts.map((contact) => (
-						<li className="flex gap-4" key={contact.id}>
+						<li className="flex gap-2 items-center" key={contact.id}>
 							<i className="text-2xl dark:text-gray-400 mr-4">
 								{contact.icon}
 							</i>
-							<span className="text-lg   mb-4 dark:text-ternary-light">
+							<span className="text-lg  dark:text-ternary-light">
 								{contact.name}
 							</span>
 						</li>
@@ -84,10 +70,7 @@ const Contact = () => {
 				</ul>
 				<div className="">
 					<div className="mx-auto ">
-						<form
-							onSubmit={handleSubmit}
-							className="border-[2px] md:w-[30rem] rounded-lg p-4 mx-auto dark:bg-secondary-dark rounded-xl shadow-xl "
-						>
+						<div className="border-[2px] md:w-[30rem] rounded-lg p-4 mx-auto dark:bg-secondary-dark rounded-xl shadow-xl ">
 							<p className="font-general-medium border-b-[2px] w-[10rem] mx-auto text-center pb-2 dark:text-primary-light text-2xl mb-8">
 								Contact Form
 							</p>
@@ -124,14 +107,13 @@ const Contact = () => {
 									onChange={changeHandler}
 								/>
 							</div>
-	
+
 							<div className="font-general-medium mx-auto w-40 px-4 py-2.5  text-center font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg mt-6 duration-500">
-								<button>Submit</button>
+							<a href="mailto:snehajain28022004@gmail.com?body:hey"><button>Submit</button></a>	
 							</div>
-						</form>
+						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	);

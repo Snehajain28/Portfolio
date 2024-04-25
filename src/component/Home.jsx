@@ -7,24 +7,34 @@ import { BiDownload, BiLogoInstagram } from "react-icons/bi";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { useStateValues } from '../utils/Provider';
+
 
 export default function Home() {
 
   useEffect(()=> {
     AOS.init({duration: 1000})
 })
+const [{ hamburger, abc }, dispatch] = useStateValues();
 
+	if (abc) { console.log(hamburger) }
 
   return (
-    <div id="home" className="relative overflow-x-hidden h-full cursor-pointer items-center flex-col flex w-[100vw]">
-      <div className="flex  flex-col md:w-[90vw] mx-auto md:gap-[5rem] lg:flex-row-reverse items-center xs:gap-8 gap-5">
+    <div onClick={() => {
+      dispatch({
+        type: "SET_HAMBURGER",
+        hamburger: false,
+      })
+    }}
+    id="home" className="relative dark:text-black h-[90vh] overflow-x-hidden h-content cursor-pointer items-center flex-col flex w-[100vw]">
+      <div className="flex flex-col md:w-[90vw] mx-auto md:gap-[5rem] lg:gap-0 lg:flex-row-reverse  items-center xs:gap-8 gap-5">
         <div className="h-[7rem] xs:h-[9rem] xs:mt-[2rem] mt-3 md:mt-[4rem] md:h-[15rem] lg:h-[20rem] lg:mt-[2rem] ">
           <img data-aos='fade-up' data-aos-duration="1000"
             alt="" className="h-full rounded-full"
             src="https://img.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_138676-9487.jpg?size=338&ext=jpg&ga=GA1.1.87170709.1707436800&semt=ais" />
         </div>
 
-        <div className="flex flex-col  w-[90vw] mx-auto h-full lg:gap-6 gap-4 justify-center items-center ">
+        <div className="flex flex-col w-[90vw] mx-auto h-full lg:gap-6 gap-4 justify-center items-center ">
           <h1 data-aos='fade-up' data-aos-duration="1000" className=" md:text-[3rem]  lg:mt-[6rem] text-3xl justify-center flex items-center gap-2 font-extrabold">
             <FaRegHandPeace className="animate-bounce" /> Hello, I'm Sneha Jain</h1>
           <p data-aos='fade-up' data-aos-duration="1000"
@@ -54,7 +64,7 @@ export default function Home() {
         </div>
       </div>
       <HashLink to={'#about'} smooth>
-        <HiArrowDown className="animate-bounce md:text-[3rem] lg:mt-[1rem] absolute bottom-1 right-3/2  text-[1.5rem]" />
+        <HiArrowDown className="animate-bounce md:text-[3rem] mt-[1.7rem]   text-[1.5rem]" />
       </HashLink>
     </div>
 

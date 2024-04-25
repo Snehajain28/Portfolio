@@ -1,6 +1,4 @@
-import React, { useEffect } from 'react'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+
 
 const Tech = [
     {
@@ -49,21 +47,19 @@ const Tech = [
 
 export default function TechStack() {
 
-    useEffect(() => {
-        AOS.init({ duration: 1000 })
-    })
+    
 
     return (
-        <div id='tech' className=' mt-[2rem] dark:bg-gradient-to-b from-gray-800 to-black dark:text-white w-full h-content'>
+        <div id="tech" className=' mt-[2rem] dark:bg-gradient-to-b from-gray-800 to-black dark:text-white w-full h-content'>
             <div className='max-w-screen-lg h-full p-4 mx-auto flex flex-col justify-center w-full '>
                 <div className='pb-4'>
                     <p className='text-4xl font-bold inline border-b-4 border-gray-400'>TECH STACK</p>
-                    <p className='py-6'>This are the technologies I've worked with</p>
+                    <p className='py-6'>These are the technologies I've worked with</p>
                 </div>
                 <div className='w-[90vw] mx-auto h-full flex flex-wrap gap-5 justify-center text-center '>
                     {
                         Tech.map((tech, i) => (
-                            <div data-aos="zoom-in"  key={i} className={`shadow-md hover:scale-105 h-[8rem] w-[8rem] duration-500 py-2 rounded-lg `}>
+                            <div data-aos="zoom-in"   key={i} className={`shadow-md hover:scale-105 h-[8rem] w-[8rem] duration-500 py-2 rounded-lg `}>
                                 <img src={tech.src} alt="" className='w-20 h-20 mx-auto object-contain' />
                                 <p className='mt-4'>{tech.text}</p>
                             </div>
