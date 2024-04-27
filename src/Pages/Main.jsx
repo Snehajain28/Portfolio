@@ -9,20 +9,17 @@ import Project from '../component/Project';
 
 function Main() {
   return (
-    <div className=' h-full w-full  dark:bg-black dark:text-white '>
-
-        <HashLink to={'#home'} elementId='home' />
-        <HashLink to={'#about'} elementId='about' />
-        <HashLink to={'#tech'} elementId='tech' />
-        <HashLink to={'#projects'} elementId='projects' />
-        <HashLink to={'#contact'} elementId='contact' />
-      <div className='overflow-y-scroll'>
-           <Home />
-        <About />
-        <TechStack />
-        <Project />
-        <Contact />
-      </div>
+    <div className=' h-full w-full dark:bg-black dark:text-white '>
+      <HashLink to={'#home'} elementId='home' />
+      <HashLink to={'#about'} elementId='about' />
+      <HashLink to={'#tech'} elementId='tech' />
+      <HashLink to={'#projects'} elementId='projects' />
+      <HashLink to={'#contact'} elementId='contact' />
+      <Home />
+      <About />
+      <TechStack />
+      <Project />
+      <Contact />
     </div>
   )
 }

@@ -9,9 +9,9 @@ import { Project_data } from './Data';
 function App() {
 
   return (
-    <div className='w-[100vw]  h-content'>
+    <div className='w-[100vw] '>
          <Navbar/>
-      <Routes className="overflow-y-scroll">
+      <Routes>
         <Route path='/' element={<Main />} />
         <Route path='/chit-chat' element={<Projectpage data={Project_data.chitchat} />} />
         <Route path='/melody-mates' element={<Projectpage data={Project_data.melodymates} />} />

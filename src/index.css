@@ -30,11 +30,19 @@ code {
    transform: scale(1.1);
  
  }
-#home {
+ .lightbg{
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: cover;
   object-fit:cover;
   background-image: url("https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg?t=st=1710662846~exp=1710666446~hmac=6bbafbe41f6f07e6d42f4e999b29e0d3b92d46efbbdef53b9add4d8e785d2e24&w=740");
+} 
+.darkbg{
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color:white;
+  object-fit:cover;
+  background-image: url("https://img.freepik.com/free-photo/abstract-textured-backgound_1258-30471.jpg?t=st=1714222867~exp=1714226467~hmac=2128d4e3ca318f98be3edff140fb031426ba7160385e9e11a9b6c5ef337d9065&w=740")
+ 
 }
-

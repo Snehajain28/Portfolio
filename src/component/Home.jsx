@@ -12,21 +12,19 @@ import { useStateValues } from '../utils/Provider';
 
 export default function Home() {
 
-  useEffect(()=> {
-    AOS.init({duration: 1000})
-})
-const [{ hamburger, abc }, dispatch] = useStateValues();
-
-	if (abc) { console.log(hamburger) }
-
+  useEffect(() => {
+    AOS.init({ duration: 1000 })
+  })
+  const [{ mode}, dispatch] = useStateValues();
+console.log(mode)
   return (
-    <div onClick={() => {
+    <div onClick={() => {  
       dispatch({
         type: "SET_HAMBURGER",
         hamburger: false,
       })
     }}
-    id="home" className="dark:text-black  h-content cursor-pointer items-center flex-col flex w-full">
+      id="home" className={`${mode === 'light' ? "lightbg" : "darkbg" }  h-[90vh] cursor-pointer items-center flex-col flex w-full`}>
       <div className="flex flex-col md:w-[90vw] mx-auto md:gap-[5rem] lg:gap-0 lg:flex-row-reverse  items-center xs:gap-8 gap-5">
         <div className="h-[7rem] xs:h-[9rem] xs:mt-[2rem] mt-3 md:mt-[4rem] md:h-[15rem] lg:h-[20rem] lg:mt-[2rem] ">
           <img data-aos='fade-up' data-aos-duration="1000"
