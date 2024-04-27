@@ -16,7 +16,6 @@ export default function Home() {
     AOS.init({ duration: 1000 })
   })
   const [{ mode}, dispatch] = useStateValues();
-console.log(mode)
   return (
     <div onClick={() => {  
       dispatch({

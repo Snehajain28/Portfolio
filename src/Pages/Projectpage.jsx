@@ -6,7 +6,6 @@ import { useStateValues } from '../utils/Provider';
 export default function Projectpage({ data }) {
 
   const [{ hamburger, abc }, dispatch] = useStateValues();
-
   if (abc) { console.log(hamburger) }
 
   return (
@@ -16,9 +15,9 @@ export default function Projectpage({ data }) {
         hamburger: false,
       })
     }}
-      className='h-[100vh] w-[100vw] dark:bg-black '>
+      className='h-content w-[100vw] dark:bg-black dark:text-white '>
       <div
-        className='w-[90vw] lg:w-[80vw] items-center  md:p-10 mb-8 flex flex-col rounded-lg mx-auto p-3'>
+        className='w-[90vw] h-full lg:w-[80vw] items-center  md:p-10 mb-8 flex flex-col rounded-lg mx-auto p-3'>
         <img
           className='w-[22rem] md:w-[40rem] md:h-[20rem] h-[10rem] object-fit object-cover rounded-lg shadow-lg border'
           alt=''
@@ -45,7 +44,9 @@ export default function Projectpage({ data }) {
         <p className='text-sm  md:text-lg md:w-9/12  md:mt-7  mx-auto leading-6 my-2'>
           {data.descrption}
         </p>
+
       </div>
+
     </div>
   )
 }
