@@ -54,8 +54,8 @@ export default function Navbar() {
 
 
   return (
-    <div className="w-full h-[60px] bg-white  dark:bg-black dark:shadow-blue-900 dark:shadow-sm shadow-lg md:h-[70px] sticky top-0 z-50 ">
-      <nav className="flex h-full relative w-[90vw] mx-auto items-center justify-between  ">
+    <div className="w-full h-[60px]  sticky top-0 z-50 bg-white  dark:bg-black dark:shadow-blue-900 dark:shadow-sm shadow-lg md:h-[70px] ">
+      <nav className="flex h-full w-[90vw] mx-auto items-center justify-between  ">
         <Link to={'/#home'}> <img
           className=" h-[2.5rem] dark:h-[3.4rem] md:h-[4rem] md:ml-[2rem] rounded-full ml-[1rem] object-fit object-contain "
           src={`${theme === 'light'?

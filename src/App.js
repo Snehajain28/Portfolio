@@ -10,8 +10,10 @@ function App() {
 
   return (
     <div className='w-[100vw] '>
-         <Navbar/>
-      <Routes>
+       
+       <Navbar/>
+         
+      <Routes className="h-[90vh]">
         <Route path='/' element={<Main />} />
         <Route path='/chit-chat' element={<Projectpage data={Project_data.chitchat} />} />
         <Route path='/melody-mates' element={<Projectpage data={Project_data.melodymates} />} />
