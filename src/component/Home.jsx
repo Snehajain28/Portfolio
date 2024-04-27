@@ -24,20 +24,21 @@ console.log(mode)
         hamburger: false,
       })
     }}
-      id="home" className={`${mode === 'light' ? "lightbg" : "darkbg" }  h-[90vh] cursor-pointer items-center flex-col flex w-full`}>
-      <div className="flex flex-col md:w-[90vw] mx-auto md:gap-[5rem] lg:gap-0 lg:flex-row-reverse  items-center xs:gap-8 gap-5">
-        <div className="h-[7rem] xs:h-[9rem] xs:mt-[2rem] mt-3 md:mt-[4rem] md:h-[15rem] lg:h-[20rem] lg:mt-[2rem] ">
+      id="home" className={`${mode === 'light' ? "lightbg" : "darkbg" } h-[90vh] cursor-pointer items-center flex-col justify-between flex w-full`}>
+      <div className="flex flex-col md:w-[90vw] mx-auto md:gap-[2rem] lg:gap-0 lg:flex-row-reverse  items-center xs:gap-8 gap-5">
+  
+        <div className="h-[7rem] xs:h-[9rem] xs:mt-[2rem] mt-3 md:mt-[2rem] md:h-[10rem] lg:h-[20rem] lg:mt-[2rem] ">
           <img data-aos='fade-up' data-aos-duration="1000"
             alt="" className="h-full rounded-full"
             src="https://img.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_138676-9487.jpg?size=338&ext=jpg&ga=GA1.1.87170709.1707436800&semt=ais" />
         </div>
 
         <div className="flex flex-col w-[90vw] lg:w-[70vw] mx-auto h-full lg:gap-6 gap-4 justify-center items-center ">
-          <h1 data-aos='fade-up' data-aos-duration="1000" className=" md:text-[3rem]  lg:mt-[6rem] text-3xl justify-center flex items-center gap-2 font-extrabold">
+          <h1 data-aos='fade-up' data-aos-duration="1000" className=" md:text-[2rem] lg:text-[2.5rem] lg:mt-[6rem] text-3xl justify-center flex items-center gap-2 font-extrabold">
             <FaRegHandPeace className="animate-bounce" /> Hello, I'm Sneha Jain</h1>
           <p data-aos='fade-up' data-aos-duration="1000"
-            className=" md:text-[2rem] text-xl text-green-500  font-bold">Full Stack Web Developer</p>
-          <span className='italic font-semibold  text-center lg:ml-[1.7rem] flex text-[1rem] ml-[1.7rem] h-[2rem] lg:w-[24rem] w-9/12 md:text-[1.5rem]'>
+            className=" md:text-[1.8rem] text-xl text-green-500  font-bold">Full Stack Web Developer</p>
+          <span className='italic font-semibold  text-center lg:ml-[1.7rem] flex text-[1rem] ml-[1.7rem] h-[2rem] lg:w-[24rem] w-9/12 md:text-[1.3rem]'>
             <span>I &nbsp;</span>
             <Typewriter
               options={{
@@ -48,7 +49,7 @@ console.log(mode)
             />
           </span>
           <div data-aos='fade-up' data-aos-duration="1000"
-            className="flex md:text-[2.1rem]  lg:mt-[1.5rem] text-[1.7rem] md:mt-20 mt-6 gap-8">
+            className="flex md:text-[2.1rem]  lg:mt-[2rem] text-[1.7rem] md:mt-10 mt-6 gap-8">
             <a href='https://www.instagram.com/_._sneha__jain_._/' target="_blank" rel="noopener noreferrer"> <BiLogoInstagram className="logo" />  </a>
             <a href='https://github.com/Snehajain28' target="_blank" rel="noopener noreferrer"> <FiGithub className="logo" />  </a>
             <a href='https://www.linkedin.com/in/sneha-jain-65b87a228/' target="_blank" rel="noopener noreferrer"><FiLinkedin className="logo" />  </a>
@@ -61,9 +62,11 @@ console.log(mode)
           </a>
         </div>
       </div>
+
       <HashLink to={'#about'} smooth>
-        <HiArrowDown className="animate-bounce md:text-[3rem] mt-[1.7rem]   text-[1.5rem]" />
+        <HiArrowDown className="animate-bounce md:text-[3rem] mb-[0.5rem] text-[1.5rem]" />
       </HashLink>
+
     </div>
 
   )
