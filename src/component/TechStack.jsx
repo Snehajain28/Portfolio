@@ -12,8 +12,8 @@ export default function TechStack() {
               hamburger: false,
             })
           }}
-        id="tech" className=' my-[2rem] dark:bg-gradient-to-b lg:w-[70vw] mx-auto from-gray-800 to-black dark:text-white w-full h-content'>
-            <div className='max-w-screen-lg h-full p-4 mx-auto flex flex-col justify-center w-full '>
+        id="tech" className=' my-[2rem] dark:bg-gradient-to-b  mx-auto from-gray-800 to-black dark:text-white w-full h-content'>
+            <div className='max-w-screen-lg h-full p-4 lg:w-[70vw] mx-auto flex flex-col justify-center w-full '>
                 <div className='pb-4'>
                     <p className='text-4xl font-bold w-[14rem] flex justify-center mx-auto border-b-4 border-gray-400'>TECH STACK</p>
                     <p className='py-10'>These are the technologies I've worked with</p>

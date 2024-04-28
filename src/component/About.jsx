@@ -17,14 +17,14 @@ function About() {
       <div className="my-10">
         <h1 className='text-4xl font-bold inline border-b-4 border-gray-400'>ABOUT ME</h1>
         <p className="w-[80vw] mx-auto my-[1rem] font-semibold text-center text-xl md:text-2xl mx-auto">Hi, I’m Sneha Jain. Nice to meet you.</p>
-        <p className=" lg:w-[50vw] w-[80vw]  flex justify-center line-height-[1px] mx-auto mt-3  md:w-10/12 text-[1rem] text-justify "> Here, you'll find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
+        <p className=" lg:w-[50vw] mx-auto w-[80vw]  flex justify-center line-height-[1px] mx-auto mt-3  md:w-10/12 text-[1rem] text-justify "> Here, you'll find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
       </div>
 
-      <div className="flex flex-col gap-10 lg:w-[90vw] items-center mx-auto lg:flex-row">
+      <div className="flex flex-col gap-10 lg:w-[80vw] lg:gap-0  items-center mx-auto lg:flex-row">
 
         <div >
-          <img alt="" className="rounded-lg  lg:mt-10 object-cover md:w-[18rem] mx-auto h-[15rem]"
-            src="https://img.freepik.com/free-photo/3d-render-code-testing-functional-test-usability_107791-16607.jpg?t=st=1710668476~exp=1710672076~hmac=a5821c8a67976dfa55c04929984e981a6c35cba3d5db6e925bca5b83178447ec&w=900" />
+          <img alt="" className="rounded-lg   object-cover md:w-[18rem] mx-auto h-[15rem]"
+            src="https://img.freepik.com/free-vector/programmer-working-with-php_52683-22998.jpg?t=st=1714299301~exp=1714302901~hmac=3198c48dcc8f5cd0c44c52fb24478419a03c9bce4380f3993a2e459511737e50&w=740" />
         </div>
 
         <div className=" lg:w-[40vw] w-[90vw] mx-auto flex flex-col text-[0.9rem] items-start">
