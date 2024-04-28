@@ -23,7 +23,7 @@ export default function TechStack() {
                 <div className='w-[90vw] mx-auto h-full flex flex-wrap gap-5 lg:gap-20 lg:w-[70vw] justify-center text-center '>
                     {
                         Tech_data.map((tech, i) => (
-                            <div data-aos="zoom-in"   key={i} className={`shadow-xl cursor-pointer h-[8rem]  w-[8rem] duration-500 py-2 rounded-lg dark:shadow-${tech.color}`}>
+                            <div data-aos="zoom-in"   key={i} className={` dark:shadow-lg dark:${tech.shdwcolor} shadow-xl cursor-pointer h-[8rem]  w-[8rem] duration-500 py-2 rounded-lg`}>
                                 <img src={tech.src} alt="" className='w-20 h-20 mx-auto object-contain' />
                                 <p className='mt-4'>{tech.text}</p>
                             </div>
