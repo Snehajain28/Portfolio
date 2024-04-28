@@ -32,7 +32,7 @@ export default function Home() {
             src="https://img.freepik.com/free-vector/cute-girl-hacker-operating-laptop-cartoon-vector-icon-illustration-people-technology-isolated-flat_138676-9487.jpg?size=338&ext=jpg&ga=GA1.1.87170709.1707436800&semt=ais" />
         </div>
 
-        <div className="flex flex-col w-[90vw] lg:w-[70vw] mx-auto h-full lg:gap-6 gap-4 justify-center items-center ">
+        <div className="flex flex-col w-[90vw] lg:w-[40vw] mx-auto h-full lg:gap-6 gap-4 justify-center items-center ">
           <h1 data-aos='fade-up' data-aos-duration="1000" className=" md:text-[2rem] lg:text-[2.5rem] lg:mt-[6rem] text-3xl justify-center flex items-center gap-2 font-extrabold">
             <FaRegHandPeace className="animate-bounce" /> Hello, I'm Sneha Jain</h1>
           <p data-aos='fade-up' data-aos-duration="1000"

@@ -13,14 +13,14 @@ function About() {
         hamburger: false,
       })
     }}
-    id="about" className=" dark:bg-black mt-[2rem] text-center h-content  flex justify-center items-center flex-col w-full overflow-x-hidden" >
+    id="about" className=" dark:bg-black mt-[2rem] text-center h-content  flex justify-center items-center flex-col w-full  overflow-x-hidden" >
       <div className="my-10">
         <h1 className='text-4xl font-bold inline border-b-4 border-gray-400'>ABOUT ME</h1>
         <p className="w-[80vw] mx-auto my-[1rem] font-semibold text-center text-xl md:text-2xl mx-auto">Hi, I’m Sneha Jain. Nice to meet you.</p>
         <p className=" lg:w-[50vw] mx-auto w-[80vw]  flex justify-center line-height-[1px] mx-auto mt-3  md:w-10/12 text-[1rem] text-justify "> Here, you'll find more information about me, what I do, and my current skills mostly in terms of programming and technology</p>
       </div>
 
-      <div className="flex flex-col gap-10 lg:w-[80vw] lg:gap-0  items-center mx-auto lg:flex-row">
+      <div className="flex flex-col gap-10 lg:w-[80vw] lg:pl-10 lg:gap-0  items-center mx-auto lg:flex-row">
 
         <div >
           <img alt="" className="rounded-lg   object-cover md:w-[18rem] mx-auto h-[15rem]"
