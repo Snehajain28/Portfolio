@@ -16,7 +16,7 @@ export default function Project() {
         hamburger: false,
       })
     }}
-    className=' mt-[4rem] pt-[2rem] dark:bg-gradient-to-b from-gray-900 to-black dark:text-white w-full h-content'>
+    className=' mt-[4rem] py-[2rem] dark:bg-gradient-to-b from-gray-900 to-black dark:text-white w-full h-content'>
       <h2 className='text-4xl text-center mb-10 w-[12rem] flex justify-center mx-auto  font-bold inline border-b-4 border-gray-400'>
         PROJECTS
       </h2>

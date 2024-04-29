@@ -9,7 +9,7 @@ import Project from '../component/Project';
 
 function Main() {
   return (
-    <div className=' h-full w-full dark:bg-black dark:text-white '>
+    <div className=' h-full w-full dark:bg-[#101010] dark:text-white '>
       <HashLink to={'#home'} elementId='home' />
       <HashLink to={'#about'} elementId='about' />
       <HashLink to={'#tech'} elementId='tech' />

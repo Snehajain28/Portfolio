@@ -13,7 +13,7 @@ function About() {
         hamburger: false,
       })
     }}
-    id="about" className=" dark:bg-black mt-[2rem] text-center h-content  flex justify-center items-center flex-col w-full  overflow-x-hidden" >
+    id="about" className=" mt-[2rem] text-center h-content  flex justify-center items-center flex-col w-full  overflow-x-hidden" >
       <div className="my-10">
         <h1 className='text-4xl font-bold inline border-b-4 border-gray-400'>ABOUT ME</h1>
         <p className="w-[80vw] mx-auto my-[1rem] font-semibold text-center text-xl md:text-2xl mx-auto">Hi, I’m Sneha Jain. Nice to meet you.</p>

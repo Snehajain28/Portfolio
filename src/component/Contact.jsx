@@ -71,7 +71,7 @@ const Contact = () => {
 						))}
 					</ul>
 				</div>
-				<div data-aos="fade-up" className="border-[2px] mx-auto  md:w-[30rem] rounded-lg p-4 mx-auto dark:bg-secondary-dark rounded-xl shadow-xl ">
+				<div data-aos="fade-up" className="border-[2px] lg:mt-[3rem] mx-auto   md:w-[30rem] rounded-lg p-4 mx-auto dark:bg-secondary-dark rounded-xl shadow-xl ">
 					<p className="font-general-medium border-b-[2px] w-[10rem] mx-auto text-center pb-2 dark:text-primary-light text-2xl mb-8">
 						Contact Form
 					</p>
