@@ -2,6 +2,8 @@ import { FiPhone, FiMapPin, FiMail } from 'react-icons/fi';
 import TextField from '@mui/material/TextField';
 import { useState } from "react";
 import { useStateValues } from '../utils/Provider';
+import emailjs from '@emailjs/browser';
+import React, { useRef } from 'react';
 
 const contacts = [
 	{
@@ -25,6 +27,7 @@ const contacts = [
 
 const Contact = () => {
 	const [{ hamburger, abc }, dispatch] = useStateValues();
+	const form = useRef();
 
 	if (abc) { console.log(hamburger) }
 
@@ -42,7 +45,33 @@ const Contact = () => {
 		});
 	}
 
+  const sendEmail = (e) => {
+    e.preventDefault();
 
+    emailjs
+	.send(
+		'service_91g0u7b' ,
+		'template_adb8ab6',
+        {
+          from_name: formData.name,
+          to_name: "Sneha Jain",
+          from_email: formData.email,
+          to_email: "snehajain28022004@gmail.com",
+          message: formData.msg,
+        },
+		'u07Nam-2R-a9lfVp5'
+      )
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
+	
 	return (
 		<div onClick={() => {
 			dispatch({
@@ -75,6 +104,7 @@ const Contact = () => {
 					<p className="font-general-medium border-b-[2px] w-[10rem] mx-auto text-center pb-2 dark:text-primary-light text-2xl mb-8">
 						Contact Form
 					</p>
+					<form ref={form} onSubmit={sendEmail}>
 					<div className="mb-4 rounded-lg md:w-[15rem] md:my-10 md:mx-auto bg-white">
 						<TextField
 							label="Name"
@@ -113,8 +143,9 @@ const Contact = () => {
 					</div>
 
 					<div className="font-general-medium mx-auto w-40 px-4 py-2.5  text-center font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg mt-6 duration-500">
-						<a href="mailto:snehajain28022004@gmail.com?body:hey"><button>Submit</button></a>
+						<button  type='submit' >Submit</button>
 					</div>
+					</form>
 				</div>
 			</div>
 		</div>
